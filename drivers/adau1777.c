@@ -80,7 +80,9 @@
 // Register values for this application
 //-----------------------------------------------------------------------------
 
-/* External MCLK, crystal disabled, PLL bypassed, /2 core and master clocks. */
+/* External MCLK, crystal disabled, I2C spike filter disabled,
+ * PLL bypassed, /2 core and master clocks.
+ */
 #define ADAU1777_CLK_CONTROL_24M576_BYPASS        0x31U
 
 /*

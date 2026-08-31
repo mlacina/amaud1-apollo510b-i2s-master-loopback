@@ -1,0 +1,34 @@
+# Build output
+Output/
+Debug/
+Release/
+build/
+
+# SEGGER Embedded Studio local session/debug files
+*.emSession
+*Internal.jlink
+jlink.log
+
+# SEGGER Embedded Studio build output
+SES/Output/
+
+# Logs
+*.log
+
+# Backup / temporary files
+*.bak
+*-bak
+*-back
+* - bak
+*.tmp
+*~
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Compiler / linker artifacts
+*.o
+*.d
+*.axf
+*.map

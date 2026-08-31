@@ -1,0 +1,115 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="amaud1_i2s_AP5_as_master_loopback" target="8" version="2">
+  <configuration Name="amaud1_i2s_AP5_as_master_loopback" hidden="Yes" />
+  <configuration
+    Name="amaud1_i2s_AP5_as_master_loopback Internal"
+    inherited_configurations="Internal;amaud1_i2s_AP5_as_master_loopback" />
+  <configuration Name="Internal" hidden="Yes" />
+  <project Name="amaud1_ap510b_i2s_master_loopback">
+    <configuration
+      Name="amaud1_i2s_AP5_as_master_loopback"
+      Target="Cortex-M55"
+      arm_architecture="v8.1M_Mainline"
+      arm_core_type="Cortex-M55"
+      arm_endian="Little"
+      arm_fpu_type="FPv5-D16"
+      arm_target_device_name="Cortex-M55" />
+    <configuration
+      BUILD_OPTIONS="None"
+      JLinkExecuteCommand="SetLogVerbose = 1"
+      JLinkLogFileName="$(ProjectDir)/jlink.log"
+      Name="amaud1_i2s_AP5_as_master_loopback Internal"
+      arm_fp_abi="Hard"
+      arm_linker_variant="GNU"
+      arm_target_device_name="AP510BFA-CBR"
+      build_generic_options_file_name=""
+      build_toolchain_directory="$(ARM_GCC_ROOT)/bin"
+      c_additional_options=""
+      c_include_files=""
+      c_preprocessor_definitions="PART_apollo510;AM_PACKAGE_BGA;AM_PART_APOLLO510;gcc;FAMILY=apollo510;PACKAGE=AM_PACKAGE_BGA;BOARD=apollo510b_evb;NEMA_PLATFORM=apollo510_nemagfx;AM_DEBUG_PRINTF;AM_HAL_FLASH_PAGE_SIZE=1024;AM_PRINTF_BUFSIZE=8192"
+      c_user_include_directories="../src;../drivers;$(AMBIQSUITE_ROOT)/mcu/apollo510;$(AMBIQSUITE_ROOT)/mcu/apollo510/regs;$(AMBIQSUITE_ROOT)/mcu/apollo510/hal;$(AMBIQSUITE_ROOT)/mcu/apollo510/hal/mcu;$(AMBIQSUITE_ROOT)/mcu/apollo510/hal/mcu/gcc/bin;$(AMBIQSUITE_ROOT)/CMSIS/AmbiqMicro/Include;$(AMBIQSUITE_ROOT)/CMSIS/AmbiqMicro/Source;$(AMBIQSUITE_ROOT)/CMSIS/ARM/Include;$(AMBIQSUITE_ROOT)/devices;$(AMBIQSUITE_ROOT)/utils;$(AMBIQSUITE_ROOT)/boards/apollo510b_evb/bsp;$(AMBIQSUITE_ROOT)/third_party/ThinkSi/NemaGFX_SDK/include/tsi/NemaGFX;$(AMBIQSUITE_ROOT)/third_party/ThinkSi/NemaGFX_SDK/NemaGFX;$(AMBIQSUITE_ROOT)/third_party/ThinkSi/NemaGFX_SDK/include/tsi/common;$(AMBIQSUITE_ROOT)/third_party/ThinkSi/NemaGFX_SDK/include/tsi/NemaDC;$(AMBIQSUITE_ROOT)/third_party/ThinkSi/NemaGFX_SDK/common/mem;$(AMBIQSUITE_ROOT)/third_party/ThinkSi/config/apollo510_nemagfx;$(AMBIQSUITE_ROOT)/third_party/ThinkSi/NemaGFX_SDK/NemaDC;$(AMBIQSUITE_ROOT)/ambiq_ble/apps/amota;$(AMBIQSUITE_ROOT)/ambiq_ble/profiles/amota;$(AMBIQSUITE_ROOT)/ambiq_ble/services;$(AMBIQSUITE_ROOT)/third_party/FreeRTOSv10.5.1/Source/include;$(AMBIQSUITE_ROOT)/third_party/FreeRTOSv10.5.1/Source/portable/GCC/AMapollo5;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-host/include;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-host/sources/hci/ambiq;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-host/sources/hci/ambiq/em9305;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-host/sources/sec/common;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-host/sources/stack/att;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-host/sources/stack/cfg;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-host/sources/stack/dm;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-host/sources/stack/hci;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-host/sources/stack/l2c;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-host/sources/stack/smp;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/include/app;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/apps;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/apps/app;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/profiles;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/profiles/bas;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/profiles/gap;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/profiles/gatt;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/profiles/hid;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/profiles/hrps;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/profiles/include;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/profiles/rscp;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/profiles/uribeacon;$(AMBIQSUITE_ROOT)/third_party/cordio/ble-profiles/sources/services;$(AMBIQSUITE_ROOT)/third_party/cordio/wsf/include;$(AMBIQSUITE_ROOT)/third_party/cordio/wsf/sources;$(AMBIQSUITE_ROOT)/third_party/cordio/wsf/sources/port/freertos;$(AMBIQSUITE_ROOT)/third_party/cordio/wsf/sources/util;$(AMBIQSUITE_ROOT)/third_party/tinyusb/source/src;$(AMBIQSUITE_ROOT)/third_party/tinyusb/source/src/class/cdc;$(AMBIQSUITE_ROOT)/third_party/tinyusb/source/src/class/hid;$(AMBIQSUITE_ROOT)/third_party/tinyusb/source/src/class/vendor;$(AMBIQSUITE_ROOT)/third_party/tinyusb/source/src/common;$(AMBIQSUITE_ROOT)/third_party/tinyusb/source/src/osal;$(AMBIQSUITE_ROOT)/third_party/uecc"
+      debug_initial_breakpoint_set_option="Always"
+      debug_stack_pointer_start="__StackTop"
+      debug_start_from_entry_point_symbol="Yes"
+      debug_startup_completion_point="main"
+      gcc_c_language_standard="c99"
+      gcc_debugging_level="Level 3"
+      gcc_entry_point="Reset_Handler"
+      gcc_optimization_level="Level 0"
+      gcc_prefix="arm-none-eabi-"
+      gcc_short_enum="Minimal Container Size"
+      link_linker_script_file="../third_party/Ambiq/linker_script.ld"
+      link_use_linker_script_file="Yes"
+      linker_additional_files=""
+      linker_additional_options="-nostartfiles;-static"
+      linker_additional_system_libraries="m;c;gcc;stdc++"
+      macros=""
+      use_external_gcc="Yes" />
+    <configuration
+      Name="Common"
+      Target="Cortex-M55"
+      arm_architecture="v8.1M_Mainline"
+      arm_compiler_variant="SEGGER"
+      arm_core_type="Cortex-M55"
+      arm_endian="Little"
+      arm_fpu_type="FPv5-D16"
+      arm_linker_variant="SEGGER"
+      arm_target_device_name="Cortex-M55"
+      arm_target_interface_type="SWD"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      project_directory=""
+      project_type="Executable"
+      property_groups_file_path="$(StudioDir)/targets/propertyGroups_CM.xml" />
+    <configuration
+      Name="External Keil ARMCLANG"
+      asm_additional_options="-mcpu=Cortex-M55"
+      c_additional_options="-mcpu=Cortex-M55;@controls.txt;-O0;-g"
+      linker_post_build_command="$(KEIL_TOOLKIT_DIR)/ARMCC/bin/fromelf --bin --output bin\amaud1_i2s_AP5_as_master_loopback.bin bin\amaud1_i2s_AP5_as_master_loopback.axf" />
+    <configuration
+      LIBRARY_IO_TYPE="SEMIHOST (host-formatted)"
+      Name="Internal"
+      link_linker_script_file="$(StudioDir)/samples/SEGGER_Flash.icf" />
+    <folder Name="::Device" />
+    <folder Name="drivers">
+      <file file_name="../drivers/adau1777.c" />
+      <file file_name="../drivers/adau1777.h" />
+    </folder>
+    <folder Name="src">
+      <file file_name="../src/i2s_loopback.c" />
+    </folder>
+    <folder Name="third_party">
+      <folder Name="Ambiq">
+        <folder
+          Name="CMSIS"
+          exclude=""
+          filter="system_apollo510.c"
+          path="$(AMBIQSUITE_ROOT)/CMSIS/AmbiqMicro/Source"
+          recurse="No" />
+        <folder Name="lib">
+          <folder
+            Name="bsp"
+            exclude=""
+            filter="libam_bsp.a"
+            path="$(AMBIQSUITE_ROOT)/boards/apollo510b_evb/bsp/gcc/bin"
+            recurse="No" />
+          <folder
+            Name="hal"
+            exclude=""
+            filter="libam_hal.a"
+            path="$(AMBIQSUITE_ROOT)/mcu/apollo510/hal/mcu/gcc/bin"
+            recurse="No" />
+        </folder>
+        <folder
+          Name="utils"
+          exclude=""
+          filter="am_util_delay.c;am_util_debug.c;am_util_stdio.c;am_util_string.c;am_util_faultisr.c"
+          path="$(AMBIQSUITE_ROOT)/utils"
+          recurse="No" />
+        <file file_name="../third_party/Ambiq/am_resources.c" />
+        <file file_name="../third_party/Ambiq/linker_script.ld" />
+        <file file_name="../third_party/Ambiq/startup_gcc.c" />
+      </folder>
+    </folder>
+  </project>
+</solution>

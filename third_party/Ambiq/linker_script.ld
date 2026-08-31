@@ -1,6 +1,6 @@
 /****************************************************************************
  *
- * linker_script.ld - Linker script for applications using startup_gnu.c
+ * linker_script.ld - Linker script for applications using startup_gcc.c
  *
  * Based on the Apollo510B GCC linker script from AmbiqSuite 5.2.0:
  *   boards/apollo510b_evb/examples/audio/i2s_loopback/gcc/linker_script.ld

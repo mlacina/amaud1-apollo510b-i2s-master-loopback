@@ -248,7 +248,7 @@ static void codec_init(void)
 
     if (ui32Status != AM_HAL_STATUS_SUCCESS)
     {
-        am_util_stdio_printf("ERROR: amaud1_init() failed.\n");
+        am_util_stdio_printf("ERROR: adau1777_init() failed.\n");
     }
 }
 

@@ -62,11 +62,6 @@
       project_type="Executable"
       property_groups_file_path="$(StudioDir)/targets/propertyGroups_CM.xml" />
     <configuration
-      Name="External Keil ARMCLANG"
-      asm_additional_options="-mcpu=Cortex-M55"
-      c_additional_options="-mcpu=Cortex-M55;@controls.txt;-O0;-g"
-      linker_post_build_command="$(KEIL_TOOLKIT_DIR)/ARMCC/bin/fromelf --bin --output bin\amaud1_i2s_AP5_as_master_loopback.bin bin\amaud1_i2s_AP5_as_master_loopback.axf" />
-    <configuration
       LIBRARY_IO_TYPE="SEMIHOST (host-formatted)"
       Name="Internal"
       link_linker_script_file="$(StudioDir)/samples/SEGGER_Flash.icf" />

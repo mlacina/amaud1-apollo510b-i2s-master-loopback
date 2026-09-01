@@ -130,7 +130,32 @@ AP510BFA-CBR
 
 Using only a generic `Cortex-M55` target is sufficient for compilation, but does not provide the correct Apollo510B flash programming support.
 
-------
+## Apollo5 J-Link setup
+
+When using SEGGER Embedded Studio with Apollo510 family devices, including Apollo510B and Apollo510L, repeated `Connect -> Download` operations may occasionally fail after the secure reset sequence.
+
+In the failing case, the CPU can remain halted with `PC` pointing to an address that SES cannot read, which may cause SES to terminate.
+
+This repository does **not** include the original Ambiq/SEGGER J-Link device script.
+
+Instead, use `SES\patch_jlink.py` to create a local patched copy of the installed `Apollo330P_510L.JLinkScript`.
+
+The patch keeps the original Apollo5 reset flow unchanged and only adjusts the final debug context by setting `PC` to the application's `Reset_Handler` before returning control to SES.
+
+### Example
+
+```bat
+python SES\patch_jlink.py "C:\Program Files\SEGGER\JLink\Devices\AmbiqMicro\Apollo330P_510L.JLinkScript" "SES\Apollo330P_510L_local.JLinkScript"
+```
+
+Then select the generated file as the project's **J-Link Script File** in SEGGER Embedded Studio.
+The generated local script should not be committed to the repository.
+
+
+> **Note**
+> This is a project-level workaround for the currently observed SES/J-Link reset behavior on Apollo510 family.
+> An official fix may become available in a future Ambiq or SEGGER J-Link release.
+> If the issue is resolved upstream, this workaround may no longer be required
 
 # Project Portability
 

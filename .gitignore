@@ -32,3 +32,6 @@ Thumbs.db
 *.d
 *.axf
 *.map
+
+SES/Apollo330P_510L_local.JLinkScript
+

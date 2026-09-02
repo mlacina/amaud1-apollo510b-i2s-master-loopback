@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+#
+# Copyright (c) 2026 Mariusz Łacina
+#
+# This script creates a locally patched copy of the Ambiq/SEGGER
+# J-Link device script. The generated J-Link script is not covered
+# by the BSD-3-Clause license and remains subject to the copyright
+# and license terms of the original vendor script.
 
 from pathlib import Path
 import sys

@@ -18,7 +18,7 @@
       BUILD_OPTIONS="None"
       JLinkExecuteCommand="SetLogVerbose=1"
       JLinkLogFileName="$(ProjectDir)/jlink.log"
-      JLinkScriptFileName="$(ProjectDir)/Apollo330P_510L_local.JLinkScript"
+      JLinkScriptFileName=""
       Name="amaud1_i2s_AP5_as_master_loopback Internal"
       arm_fp_abi="Hard"
       arm_linker_variant="GNU"
